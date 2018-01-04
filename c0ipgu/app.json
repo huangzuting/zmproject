@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/homes/product",
+    "pages/discovers/discover",
+    "pages/discovers/discover-detail/discover-detail",
+    "pages/homes/product-detail/product-detail",
+    "pages/discovers/more-discover/more-discover",
+    "pages/mys/my"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/discovers/discover",
+        "text": "发现",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/homes/product",
+        "text": "首页",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png"
+      }
+      ,{
+        "pagePath": "pages/mys/my",
+        "text": "我的",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png"
+      }
+    ]
+  }
+}

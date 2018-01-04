@@ -1,0 +1,2 @@
+<import src="../discover-grid/discover-grid-template.wxml" />
+<template is="discoverGridTemplate" data="{{discovers}}" />

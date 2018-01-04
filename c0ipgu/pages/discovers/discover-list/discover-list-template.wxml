@@ -1,0 +1,22 @@
+<import src="../discover/discover-template.wxml" />
+<template name="discoverListTemplate">
+  <view class="discover-list-container">
+    <view class="inner-container">
+      <view class="discover-head">
+        <text class="slogan">{{categoryTitle}}</text>
+        <view catchtap="onMoreTap" class="more" data-category="{{categoryTitle}}">
+          <text class="more-text">更多</text>
+          <image class="more-img" src="/images/icon/arrow-right.png"></image>
+        </view>
+      </view>
+      <view class="discovers-container">
+      <block wx:for="{{discovers}}" wx:for-item="discover">
+        
+        <template is="discoverTemplate" data="{{...discover}}"/>
+      </block>
+        <!--<template is="discoverTemplate" />
+        <template is="discoverTemplate" />-->
+      </view>
+    </view>
+  </view>
+</template>

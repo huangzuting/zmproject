@@ -1,0 +1,6 @@
+<!--pages/homes/checkboxs/checkbox.wxml-->
+<template name="checkboxItem">
+  <picker class="picker"  value="{{index}}" range="{{array}}" bindchange="bindPickerChange">
+
+  </picker>
+</template>

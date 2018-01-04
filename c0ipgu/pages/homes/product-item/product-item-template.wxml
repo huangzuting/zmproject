@@ -1,0 +1,26 @@
+<template name="productItem">
+  <view class="product">
+    <image class="product-image" src="{{imgSrc}}"></image>
+
+    <view class="product-container">
+
+      <view class="product-author-date">
+        <image class="product-author" src="{{avatar}}"></image>
+        <text class="product-date">{{date}}</text>
+      </view>
+
+      <view class="product-title-view">
+        <text class="product-title">{{title}}</text>
+      </view>
+
+      <view class="product-like">
+        <image class="product-like-image" src="/images/icon/chat.png"></image>
+        <text class="product-like-font">{{collection}}</text>
+
+        <image class="product-like-image" src="/images/icon/view.png"></image>
+        <text class="product-like-font">{{reading}}</text>
+      </view>
+
+    </view>
+  </view>
+</template>

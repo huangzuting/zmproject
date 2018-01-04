@@ -1,0 +1,10 @@
+<import src="../discover/discover-template.wxml" />
+<template name="discoverGridTemplate">
+  <scroll-view class="grid-container" scroll-y="true" scroll-x="false" bindscrolltolower="onScrollLower">
+    <block wx:for="{{discovers}}" wx:for-item="discover">
+      <view class="single-view-container">
+        <template is="discoverTemplate" data="{{...discover}}" />
+      </view>
+    </block>
+  </scroll-view>
+</template>

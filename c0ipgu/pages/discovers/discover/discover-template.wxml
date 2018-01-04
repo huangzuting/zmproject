@@ -1,0 +1,8 @@
+<import src="../stars/stars-template.wxml" />
+<template name="discoverTemplate">
+    <view class="discover-container" catchtap="ondiscoverTap" data-discoverId="{{discoverId}}">
+        <image class="discover-img" src="{{coverageUrl}}"></image>
+        <text class="discover-title">{{title}}</text>
+        <template is="starsTemplate" data="{{stars:stars, score: average}}" />
+    </view>
+</template>
